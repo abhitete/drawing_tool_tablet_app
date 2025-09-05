@@ -75,3 +75,8 @@ function downloadCanvas() {
   link.href = canvas.toDataURL();
   link.click();
 }
+
+// 🔑 Make functions global so buttons can use them
+window.setTool = setTool;
+window.clearCanvas = clearCanvas;
+window.downloadCanvas = downloadCanvas;
